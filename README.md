@@ -60,6 +60,17 @@ that lives quietly in the system tray.
 - **Automatic updates** — download and install a new version from inside the app
 - **Pause shortcuts** — temporarily disable every hotkey when one conflicts with a game or another app
 
+### What's new in 1.6.1
+
+- **Region toolbars stay outside the box:** when you select a region, the **Copy:
+  Translation**, **Copy: Original**, and **Close** buttons appear in a thin strip
+  above, below, or beside the selection instead of covering it.
+- **Small selections keep every button:** a short line or a small dialog now gets the
+  full toolbar, not just a Close button.
+- **Unchanged behavior:** the translation stays in place, and `Ctrl+C`,
+  `Ctrl+Shift+C`, `Space`/`O`, `Esc`, and click-does-not-close work as before.
+- If there is not enough room outside the selection, the toolbar stays inside.
+
 ### What's new in 1.6.0
 
 - **In-place translation is now the default:** the screen is not dimmed, and there are no
@@ -68,7 +79,7 @@ that lives quietly in the system tray.
 - **Text that fits naturally:** the font size comes from the original text height, the ink switches
   between light and dark based on the background, and the translation can use nearby whitespace
   without crossing neighboring text.
-- **Your result style:** the top-right **Copy/Close** toolbar stays. In **Settings > Result style**
+- **Your result style:** the **Copy/Close** toolbar stays. In **Settings > Result style**
   you can switch back to the old **Translation cards** view; the dimming slider is enabled only for
   cards.
 - **Photo backgrounds:** flat pages come out clean. Text over photos or heavy textures uses a local
@@ -116,7 +127,7 @@ A short introduction card appears the first time. You can reopen it later from t
 - `Ctrl + Shift + C` or **Copy: Original** — copy the original on-screen text to the clipboard.
 - Copying keeps the result screen open and shows a short confirmation.
 
-The toolbar at the top right reminds you which actions are available. If you press the translate
+The toolbar on the result screen reminds you which actions are available. If you press the translate
 hotkey while a result is open, ScreenGloss keeps the result and asks you to close it with `Esc`
 before starting a new translation.
 
