@@ -30,7 +30,7 @@
 
 ![ScreenGloss translation cards over a Spanish astronomy page](docs/preview-en.png)
 
-<p align="center"><sub>A Spanish page translated into English by ScreenGloss. Translation cards sit exactly where the source text was; the original stays visible underneath.</sub></p>
+<p align="center"><sub>A Spanish page translated into English by ScreenGloss. Translation cards sit exactly where the source text was; the toolbar copies either the translation or the original, and the screen returns unchanged when you close it.</sub></p>
 
 ## What it does
 
@@ -49,19 +49,29 @@ that lives quietly in the system tray.
 - **Clipboard translation** — `Ctrl + Alt + C`; translate copied text in a separate window
 - **16 target languages** — English, Turkish, German, French, Spanish, Italian, Russian, Arabic,
   Dutch, Portuguese, Polish, Ukrainian, Azerbaijani, Japanese, Korean, and Simplified Chinese
-- **Translations in place** — press `Space` to see the original, `Esc` or click to close
+- **Translations in place** — press `Space` to see the original; `Esc` or **Close** exits
+- **Copy the translation or the original** — `Ctrl+C` / `Ctrl+Shift+C`, or the two buttons on the
+  result screen
 - **Live text-size preview** — move the slider and see the card size immediately on screen
 - **English and Turkish interface** — follows the Windows display language, or choose manually
 - **System tray app** — starts with Windows if you want, and stays out of the way
 - **Automatic updates** — download and install a new version from inside the app
 - **Pause shortcuts** — temporarily disable every hotkey when one conflicts with a game or another app
 
+### What's new in 1.5.1
+
+- **Copy without losing the translation:** the result screen now has **Copy: Translation** and
+  **Copy: Original** buttons, plus `Ctrl+C` and `Ctrl+Shift+C`. Copying no longer closes the screen.
+- **No more accidental closes:** clicking the result screen does not dismiss it, and pressing the
+  translate hotkey again keeps it open with a reminder. Use `Esc` or **Close** first.
+- **Notifications stay visible:** copy confirmations and hints are drawn above the full-screen result.
+
 ## Quick start
 
 1. **Download:** click [ScreenGloss.exe](https://github.com/mustafatire/screen-gloss-updates/releases/latest/download/ScreenGloss.exe).
 2. **Run it:** double-click the file. There is no setup; ScreenGloss opens in the system tray.
 3. **Translate:** bring the text you want onto the screen and press `Ctrl + Alt + T`.
-4. **Close:** press `Esc` or click with the left mouse button.
+4. **Close:** press `Esc` or use the **Close** button. Clicking the screen itself does not close it.
 
 > If Windows shows “Unknown publisher”, choose **More info > Run anyway**. The executable is not
 > code-signed. Only download it from this repository.
@@ -85,10 +95,14 @@ A short introduction card appears the first time. You can reopen it later from t
 ### On the result screen
 
 - `Space` or `O` — switch between the translated screen and the original.
-- `Esc` or left click — close the translation.
-- `Ctrl + C` — copy all translated text to the clipboard and close.
+- `Esc` or **Close** — close the translation. A mouse click no longer closes it.
+- `Ctrl + C` or **Copy: Translation** — copy all translated text to the clipboard.
+- `Ctrl + Shift + C` or **Copy: Original** — copy the original on-screen text to the clipboard.
+- Copying keeps the result screen open and shows a short confirmation.
 
-The hint bar at the bottom of the screen reminds you which keys are available.
+The hint bar at the bottom of the screen and the toolbar at the top right remind you which
+actions are available. If you press the translate hotkey while a result is open, ScreenGloss keeps
+the result and asks you to close it with `Esc` before starting a new translation.
 
 ## Settings
 
