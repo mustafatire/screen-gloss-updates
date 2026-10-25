@@ -6,8 +6,9 @@
 
 <p align="center">
   <strong>Translate anything on your screen with one keystroke.</strong><br>
-  Windows OCR reads the text where it already is, and ScreenGloss draws the translation over it.
-  Close the overlay and your screen is back exactly as it was.
+  Windows OCR reads the text where it already is, and ScreenGloss replaces it with the translation.
+  No dimming, no cards: the page looks edited in place. Close the overlay and your screen is back
+  exactly as it was.
 </p>
 
 <p align="center">
@@ -28,15 +29,15 @@
   <a href="https://github.com/mustafatire/screen-gloss-updates/releases">All releases</a>
 </p>
 
-![ScreenGloss translation cards over a Spanish astronomy page](docs/preview-en.png)
+![ScreenGloss in-place translation over a Turkish astronomy page](docs/preview-en.png)
 
-<p align="center"><sub>A Spanish page translated into English by ScreenGloss. Translation cards sit exactly where the source text was; the toolbar copies either the translation or the original, and the screen returns unchanged when you close it.</sub></p>
+<p align="center"><sub>A Turkish page translated into English by ScreenGloss. The translation replaces the source text in place; the toolbar copies either the translation or the original, and the screen returns unchanged when you close it.</sub></p>
 
 ## What it does
 
 **ScreenGloss** is a lightweight Windows screen translator. It captures the screen (or a region you
 select), reads the text with the OCR engine built into Windows, translates it into one of 16
-languages, and places the result directly over the original text.
+languages, and replaces the source text in place.
 
 Because the translation stays in context, you can follow a video, a game, a PDF, a presentation, or
 a foreign-language website without switching windows. There is no installer: it is a single `.exe`
@@ -49,14 +50,29 @@ that lives quietly in the system tray.
 - **Clipboard translation** — `Ctrl + Alt + C`; translate copied text in a separate window
 - **16 target languages** — English, Turkish, German, French, Spanish, Italian, Russian, Arabic,
   Dutch, Portuguese, Polish, Ukrainian, Azerbaijani, Japanese, Korean, and Simplified Chinese
-- **Translations in place** — press `Space` to see the original; `Esc` or **Close** exits
+- **Text replaced in place** — no dimming or cards by default; press `Space` to see the original,
+  `Esc` or **Close** to exit
 - **Copy the translation or the original** — `Ctrl+C` / `Ctrl+Shift+C`, or the two buttons on the
   result screen
-- **Live text-size preview** — move the slider and see the card size immediately on screen
+- **Live text-size preview** — move the slider and see the translated text size immediately on screen
 - **English and Turkish interface** — follows the Windows display language, or choose manually
 - **System tray app** — starts with Windows if you want, and stays out of the way
 - **Automatic updates** — download and install a new version from inside the app
 - **Pause shortcuts** — temporarily disable every hotkey when one conflicts with a game or another app
+
+### What's new in 1.6.0
+
+- **In-place translation is now the default:** the screen is not dimmed, and there are no
+  translation cards, accent bars, or bottom hint bar. ScreenGloss cleans the original text from its
+  local background and writes the translation in the same spot.
+- **Text that fits naturally:** the font size comes from the original text height, the ink switches
+  between light and dark based on the background, and the translation can use nearby whitespace
+  without crossing neighboring text.
+- **Your result style:** the top-right **Copy/Close** toolbar stays. In **Settings > Result style**
+  you can switch back to the old **Translation cards** view; the dimming slider is enabled only for
+  cards.
+- **Photo backgrounds:** flat pages come out clean. Text over photos or heavy textures uses a local
+  soft fill, so a subtle patch may be visible.
 
 ### What's new in 1.5.1
 
@@ -100,9 +116,9 @@ A short introduction card appears the first time. You can reopen it later from t
 - `Ctrl + Shift + C` or **Copy: Original** — copy the original on-screen text to the clipboard.
 - Copying keeps the result screen open and shows a short confirmation.
 
-The hint bar at the bottom of the screen and the toolbar at the top right remind you which
-actions are available. If you press the translate hotkey while a result is open, ScreenGloss keeps
-the result and asks you to close it with `Esc` before starting a new translation.
+The toolbar at the top right reminds you which actions are available. If you press the translate
+hotkey while a result is open, ScreenGloss keeps the result and asks you to close it with `Esc`
+before starting a new translation.
 
 ## Settings
 
@@ -115,8 +131,11 @@ Right-click the tray icon and choose **Settings…**.
   opened windows.
 - **Target language:** 16 languages, also available quickly from the tray menu. New installations
   default to the interface language; an existing target choice is preserved.
-- **Text size:** 80%–150%. The translation cards are previewed live on screen while you drag.
-- **Background dimming:** controls how much the original screen is darkened behind the cards.
+- **Result style:** **In-place translation** (default) or **Translation cards**. In-place blends the
+  translation into the surrounding background; cards use dimming.
+- **Text size:** 80%–150%. The translated text is previewed live on screen while you drag.
+- **Background dimming:** only applies to the **Translation cards** style; it is disabled for
+  in-place translation.
 - **OCR text language:** leave it on **Automatic** normally. If you know the source language,
   choosing it can improve accuracy. Hover the **?** icon for details.
 - **Check for updates**, **Reset settings**, and **Save** are at the bottom of the window.
@@ -154,6 +173,10 @@ Ukrainian, Azerbaijani, Japanese, Korean, and Chinese (Simplified).
 - DRM-protected video (Netflix, Disney+, etc.) and some exclusive full-screen games may produce a
   black capture. This is a Windows screen-capture limitation; try borderless/windowed mode.
 - Very small, blurry, or low-contrast text may not be recognized. Selecting a region usually helps.
+- On photos, gradients, or heavy textures, the original text is removed with a local soft fill. Flat
+  pages come out clean; on photos a subtle patch may be visible.
+- Very long translations may be clipped if they do not fit near the original text; translating a
+  region in smaller pieces usually helps.
 - Translations are machine translations and can be wrong, especially for technical terms, idioms,
   and abbreviations. Email addresses and URLs are deliberately left untranslated.
 - Right-to-left layouts (Arabic, Hebrew) may not always be positioned perfectly on screen.
