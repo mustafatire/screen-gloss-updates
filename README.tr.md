@@ -6,8 +6,9 @@
 
 <p align="center">
   <strong>Ekrandaki yazıları tek tuşla çevir.</strong><br>
-  Windows OCR metni bulunduğu yerde okur, ScreenGloss çeviriyi tam üzerine yerleştirir.
-  Sonuç ekranını kapattığınızda ekran eski hâline döner.
+  Windows OCR metni bulunduğu yerde okur, ScreenGloss çeviriyi tam oraya yazar.
+  Karartma ve kart yok; sayfa yerinde değiştirilmiş gibi görünür. Sonuç ekranını
+  kapattığınızda ekran eski hâline döner.
 </p>
 
 <p align="center">
@@ -28,15 +29,15 @@
   <a href="https://github.com/mustafatire/screen-gloss-updates/releases">Tüm sürümler</a>
 </p>
 
-![ScreenGloss çeviri kartları](docs/onizleme.png)
+![ScreenGloss yerinde çeviri](docs/onizleme.png)
 
-<p align="center"><sub>İngilizce bir sayfa Türkçeye çevrilmiş hâlde. Çeviri kartları kaynak metnin tam üzerinde durur; üstteki araç çubuğu çeviriyi veya orijinali kopyalar, kapattığınızda ekran eski hâline döner.</sub></p>
+<p align="center"><sub>İngilizce bir sayfa Türkçeye çevrilmiş hâlde. Çeviri, kaynak metnin tam yerine yazılır; üstteki araç çubuğu çeviriyi veya orijinali kopyalar, kapattığınızda ekran eski hâline döner.</sub></p>
 
 ## Nedir?
 
 **ScreenGloss**, Windows için hafif bir ekran çevirmenidir. Ekranın tamamını veya fareyle seçtiğiniz
 bir bölgeyi yakalar, metni Windows'un yerleşik OCR motoruyla okur, 16 dilden birine çevirir ve
-sonucu doğrudan orijinal metnin üzerine yerleştirir.
+sonucu doğrudan orijinal metnin yerine yazar.
 
 Çeviri bağlamın içinde kaldığı için video, oyun, PDF, sunum veya yabancı dildeki bir web sayfasını
 pencere değiştirmeden takip edebilirsiniz. Kurulum yoktur: sistem tepsisinde sessizce çalışan tek
@@ -49,14 +50,30 @@ bir `.exe` dosyasıdır.
 - **Panodan çeviri** — `Ctrl + Alt + C`; kopyaladığınız metni ayrı pencerede çevirin
 - **16 hedef dil** — Türkçe, İngilizce, Almanca, Fransızca, İspanyolca, İtalyanca, Rusça, Arapça,
   Hollandaca, Portekizce, Lehçe, Ukraynaca, Azerice, Japonca, Korece ve Basitleştirilmiş Çince
-- **Yerinde çeviri kartları** — `Space` ile orijinali görün; `Esc` veya **Kapat** ile çıkın
+- **Yerinde çeviri** — varsayılan olarak karartma ve kart yok; `Space` ile orijinali görün,
+  `Esc` veya **Kapat** ile çıkın
 - **Çeviriyi veya orijinali kopyalama** — `Ctrl+C` / `Ctrl+Shift+C` ya da sonuç ekranındaki iki
   düğme
-- **Canlı yazı boyutu önizlemesi** — kaydırıcıyı sürüklerken kart boyutu ekranda anında görünür
+- **Canlı yazı boyutu önizlemesi** — kaydırıcıyı sürüklerken çeviri metninin boyutu ekranda anında
+  görünür
 - **Türkçe ve İngilizce arayüz** — Windows görüntüleme diline uyar; isterseniz elle seçin
 - **Sistem tepsisi** — arka planda çalışır, isterseniz Windows ile başlar
 - **Otomatik güncelleme** — yeni sürümü uygulamanın içinden indirip kurabilirsiniz
 - **Kısayolları duraklat** — oyun veya başka bir programla çakışırsa tüm kısayolları geçici kapatın
+
+### 1.6.0 yenilikleri
+
+- **Yerinde çeviri varsayılan oldu:** ekran karartılmıyor; çeviri kartı, mavi şerit ve alttaki
+  ipucu çubuğu gösterilmiyor. Orijinal metin çevresindeki zeminle temizlenip çeviri aynı yere
+  yazılıyor.
+- **Doğal boyut ve renk:** yazı boyutu orijinal metnin yüksekliğinden hesaplanıyor; açık zemine
+  koyu, koyu zemine açık yazı seçiliyor.
+- **Komşulara taşmama:** çeviri, yakınındaki metinlere girmeden çevresindeki boşluğa yayılabiliyor.
+- **Seçim sizin:** sağ üstteki **Kopyala/Kapat** araç çubuğu duruyor. Ayarlar > **Sonuç görünümü**
+  bölümünden eski **Çeviri kartları** görünümüne dönebilirsiniz; karartma kaydırıcısı yalnızca kart
+  görünümünde etkindir.
+- **Fotoğraf zeminleri:** düz sayfalar temiz görünür. Fotoğraf veya yoğun doku üzerinde yerel
+  yumuşak dolgu kullanılır; hafif bir yama fark edilebilir.
 
 ### 1.5.1 yenilikleri
 
@@ -96,7 +113,7 @@ daha sonra yeniden açabilirsiniz.
 
 ### Sonuç ekranı
 
-Çeviri kartları göründüğünde:
+Çeviri göründüğünde:
 
 - `Space` veya `O` — orijinal ekran ile çeviri arasında geçiş yapın.
 - `Esc` veya **Kapat** — çeviriyi kapatın. Fareyle tıklamak artık kapatmaz.
@@ -104,9 +121,8 @@ daha sonra yeniden açabilirsiniz.
 - `Ctrl + Shift + C` veya **Kopyala: Orijinal** — ekrandaki orijinal metni panoya kopyalayın.
 - Kopyalama sonuç ekranını açık tutar ve kısa bir onay gösterir.
 
-Ekranın altındaki ipucu çubuğu ve sağ üstteki araç çubuğu kullanılabilecek işlemleri hatırlatır.
-Sonuç ekranı açıkken çeviri kısayoluna basarsanız ScreenGloss ekranı korur ve yeni çeviri için önce
-`Esc` ile kapatmanızı ister.
+Sağ üstteki araç çubuğu kullanılabilecek işlemleri hatırlatır. Sonuç ekranı açıkken çeviri
+kısayoluna basarsanız ScreenGloss ekranı korur ve yeni çeviri için önce `Esc` ile kapatmanızı ister.
 
 ## Ayarlar
 
@@ -119,10 +135,12 @@ Tepsi simgesine sağ tıklayıp **Ayarlar…** bölümünü açın.
   pencerelerde geçerli olur.
 - **Hedef dil:** 16 dil arasından seçilir; tepsi menüsünden de hızlıca değiştirilebilir. Yeni
   kurulumlarda varsayılan, arayüz dilidir; mevcut hedef dil seçiminiz korunur.
-- **Yazı boyutu:** %80–%150. Kaydırıcıyı sürüklerken çeviri kartlarının boyutu ekran üzerinde canlı
+- **Sonuç görünümü:** **Yerinde çeviri** (varsayılan) veya **Çeviri kartları**. Yerinde çeviri,
+  metni çevredeki zeminle değiştirir; kart görünümü karartma kullanır.
+- **Yazı boyutu:** %80–%150. Kaydırıcıyı sürüklerken çeviri metninin boyutu ekran üzerinde canlı
   olarak önizlenir.
-- **Arka plan karartma:** Çeviri kartlarının okunurluğunu artırmak için ekranın ne kadar
-  karartılacağını belirler.
+- **Arka plan karartma:** Yalnızca **Çeviri kartları** görünümünde etkindir; yerinde çeviride
+  devre dışıdır.
 - **OCR metin dili:** Normalde **Otomatik** bırakın. Kaynak dili biliyorsanız seçmek doğruluğu
   artırabilir. Ayrıntılar için **?** simgesinin üzerine gelin.
 - **Güncellemeleri kontrol et**, **Ayarları sıfırla** ve **Kaydet** pencerenin altındadır.
@@ -161,6 +179,10 @@ Portekizce, Lehçe, Ukraynaca, Azerice, Japonca, Korece ve Basitleştirilmiş Ç
   verebilir. Bu Windows'un ekran yakalama kısıtlamasıdır; oyunu pencereli / borderless moda alın.
 - Çok küçük, bulanık veya düşük kontrastlı yazılar OCR tarafından okunamayabilir. Bölge seçimiyle
   yakınlaştırmak çoğu zaman yardımcı olur.
+- Fotoğraf, gradyan veya yoğun doku üzerindeki metinlerde orijinal yazı yerel bir yumuşak dolguyla
+  temizlenir. Düz sayfalar temizdir; fotoğraf üzerinde hafif bir yama görülebilir.
+- Çok uzun çeviriler orijinal metnin yakınına sığmazsa kesilebilir; bölgeyi parça parça çevirmek
+  daha iyi sonuç verir.
 - Çeviriler makine çevirisidir; teknik terimlerde, deyimlerde ve kısaltmalarda hata olabilir.
   E-posta adresleri ve web adresleri bilinçli olarak çevrilmeden bırakılır.
 - Sağdan sola yazılan dillerin (Arapça, İbranice) yerleşimi ekranda her zaman doğru görünmeyebilir.
