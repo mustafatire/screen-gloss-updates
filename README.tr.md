@@ -61,6 +61,17 @@ bir `.exe` dosyasıdır.
 - **Otomatik güncelleme** — yeni sürümü uygulamanın içinden indirip kurabilirsiniz
 - **Kısayolları duraklat** — oyun veya başka bir programla çakışırsa tüm kısayolları geçici kapatın
 
+### 1.6.1 yenilikleri
+
+- **Bölge araç çubuğu kutunun dışında:** fareyle bir bölge seçtiğinizde
+  **Kopyala: Çeviri**, **Kopyala: Orijinal** ve **Kapat** düğmeleri seçimin üzerine
+  gelmek yerine hemen üstünde, altında veya yanında ince bir şeritte görünür.
+- **Küçük seçimlerde tüm düğmeler:** kısa bir satır veya küçük bir pencere seçtiğinizde
+  yalnızca Kapat değil, tam araç çubuğu görünür.
+- **Değişmeyen davranış:** çeviri yine yerinde kalır; `Ctrl+C`, `Ctrl+Shift+C`,
+  `Space`/`O`, `Esc` ve fareyle tıklayınca kapanmama aynı çalışır.
+- Seçimin dışında yeterli alan yoksa araç çubuğu seçimin içinde kalır.
+
 ### 1.6.0 yenilikleri
 
 - **Yerinde çeviri varsayılan oldu:** ekran karartılmıyor; çeviri kartı, mavi şerit ve alttaki
@@ -69,7 +80,7 @@ bir `.exe` dosyasıdır.
 - **Doğal boyut ve renk:** yazı boyutu orijinal metnin yüksekliğinden hesaplanıyor; açık zemine
   koyu, koyu zemine açık yazı seçiliyor.
 - **Komşulara taşmama:** çeviri, yakınındaki metinlere girmeden çevresindeki boşluğa yayılabiliyor.
-- **Seçim sizin:** sağ üstteki **Kopyala/Kapat** araç çubuğu duruyor. Ayarlar > **Sonuç görünümü**
+- **Seçim sizin:** **Kopyala/Kapat** araç çubuğu duruyor. Ayarlar > **Sonuç görünümü**
   bölümünden eski **Çeviri kartları** görünümüne dönebilirsiniz; karartma kaydırıcısı yalnızca kart
   görünümünde etkindir.
 - **Fotoğraf zeminleri:** düz sayfalar temiz görünür. Fotoğraf veya yoğun doku üzerinde yerel
@@ -121,7 +132,7 @@ daha sonra yeniden açabilirsiniz.
 - `Ctrl + Shift + C` veya **Kopyala: Orijinal** — ekrandaki orijinal metni panoya kopyalayın.
 - Kopyalama sonuç ekranını açık tutar ve kısa bir onay gösterir.
 
-Sağ üstteki araç çubuğu kullanılabilecek işlemleri hatırlatır. Sonuç ekranı açıkken çeviri
+Sonuç ekranındaki araç çubuğu kullanılabilecek işlemleri hatırlatır. Sonuç ekranı açıkken çeviri
 kısayoluna basarsanız ScreenGloss ekranı korur ve yeni çeviri için önce `Esc` ile kapatmanızı ister.
 
 ## Ayarlar
