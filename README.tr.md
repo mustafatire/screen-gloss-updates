@@ -30,7 +30,7 @@
 
 ![ScreenGloss çeviri kartları](docs/onizleme.png)
 
-<p align="center"><sub>İngilizce bir sayfa Türkçeye çevrilmiş hâlde. Çeviri kartları kaynak metnin tam üzerinde durur; orijinal metin arkada soluk görünür.</sub></p>
+<p align="center"><sub>İngilizce bir sayfa Türkçeye çevrilmiş hâlde. Çeviri kartları kaynak metnin tam üzerinde durur; üstteki araç çubuğu çeviriyi veya orijinali kopyalar, kapattığınızda ekran eski hâline döner.</sub></p>
 
 ## Nedir?
 
@@ -49,19 +49,31 @@ bir `.exe` dosyasıdır.
 - **Panodan çeviri** — `Ctrl + Alt + C`; kopyaladığınız metni ayrı pencerede çevirin
 - **16 hedef dil** — Türkçe, İngilizce, Almanca, Fransızca, İspanyolca, İtalyanca, Rusça, Arapça,
   Hollandaca, Portekizce, Lehçe, Ukraynaca, Azerice, Japonca, Korece ve Basitleştirilmiş Çince
-- **Yerinde çeviri kartları** — `Space` ile orijinali görün, `Esc` veya tıklamayla kapatın
+- **Yerinde çeviri kartları** — `Space` ile orijinali görün; `Esc` veya **Kapat** ile çıkın
+- **Çeviriyi veya orijinali kopyalama** — `Ctrl+C` / `Ctrl+Shift+C` ya da sonuç ekranındaki iki
+  düğme
 - **Canlı yazı boyutu önizlemesi** — kaydırıcıyı sürüklerken kart boyutu ekranda anında görünür
 - **Türkçe ve İngilizce arayüz** — Windows görüntüleme diline uyar; isterseniz elle seçin
 - **Sistem tepsisi** — arka planda çalışır, isterseniz Windows ile başlar
 - **Otomatik güncelleme** — yeni sürümü uygulamanın içinden indirip kurabilirsiniz
 - **Kısayolları duraklat** — oyun veya başka bir programla çakışırsa tüm kısayolları geçici kapatın
 
+### 1.5.1 yenilikleri
+
+- **Çeviriyi kaybetmeden kopyalama:** sonuç ekranında **Kopyala: Çeviri** ve **Kopyala: Orijinal**
+  düğmeleri ile `Ctrl+C` ve `Ctrl+Shift+C` var. Kopyalama ekranı artık kapatmıyor.
+- **Kazara kapanma yok:** sonuç ekranına tıklamak onu kapatmıyor; çeviri kısayoluna yeniden
+  basıldığında da ekran açık kalıyor ve önce kapatmanız hatırlatılıyor. Çıkmak için `Esc` veya
+  **Kapat** kullanın.
+- **Bildirimler görünür:** kopyalama onayları ve ipuçları tam ekran sonuç ekranının üstünde
+  gösteriliyor.
+
 ## Hızlı başlangıç
 
 1. **İndirin:** [ScreenGloss.exe](https://github.com/mustafatire/screen-gloss-updates/releases/latest/download/ScreenGloss.exe) dosyasına tıklayın.
 2. **Çalıştırın:** İndirilen dosyaya çift tıklayın. Kurulum yoktur; uygulama sistem tepsisinde açılır.
 3. **Çevirin:** Çevirmek istediğiniz metni ekrana getirip `Ctrl + Alt + T` tuşlarına basın.
-4. **Kapatın:** `Esc` veya farenin sol tuşu.
+4. **Kapatın:** `Esc` veya **Kapat** düğmesi. Ekrana fareyle tıklamak artık kapatmaz.
 
 > Windows "Bilinmeyen yayıncı" uyarısı gösterirse **Ek bilgi > Yine de çalıştır** seçeneğini
 > kullanın. Dosya imzasızdır; yalnızca bu depodan indirin.
@@ -87,10 +99,14 @@ daha sonra yeniden açabilirsiniz.
 Çeviri kartları göründüğünde:
 
 - `Space` veya `O` — orijinal ekran ile çeviri arasında geçiş yapın.
-- `Esc` veya farenin sol tuşu — çeviriyi kapatın.
-- `Ctrl + C` — tüm çevrilmiş metni panoya kopyalayın ve kapatın.
+- `Esc` veya **Kapat** — çeviriyi kapatın. Fareyle tıklamak artık kapatmaz.
+- `Ctrl + C` veya **Kopyala: Çeviri** — tüm çevrilmiş metni panoya kopyalayın.
+- `Ctrl + Shift + C` veya **Kopyala: Orijinal** — ekrandaki orijinal metni panoya kopyalayın.
+- Kopyalama sonuç ekranını açık tutar ve kısa bir onay gösterir.
 
-Ekranın altındaki ipucu çubuğu kullanılabilecek tuşları hatırlatır.
+Ekranın altındaki ipucu çubuğu ve sağ üstteki araç çubuğu kullanılabilecek işlemleri hatırlatır.
+Sonuç ekranı açıkken çeviri kısayoluna basarsanız ScreenGloss ekranı korur ve yeni çeviri için önce
+`Esc` ile kapatmanızı ister.
 
 ## Ayarlar
 
