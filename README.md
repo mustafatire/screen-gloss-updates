@@ -1,162 +1,183 @@
 <p align="center">
-  <img src="docs/logo.png" width="88" alt="Ekran Çevir simgesi">
+  <img src="docs/logo.png" width="88" alt="ScreenGloss icon">
 </p>
 
-<h1 align="center">Ekran Çevir</h1>
+<h1 align="center">ScreenGloss</h1>
 
 <p align="center">
-  <strong>Ekrandaki yazıları tek tuşla okuyup Türkçeye çeviren Windows aracı.</strong><br>
-  Çeviri, orijinal metnin üzerinde kartlar hâlinde görünür; kapattığınızda ekran eski hâline döner.
-</p>
-
-<p align="center">
-  <img src="https://img.shields.io/github/v/release/mustafatire/ekran-cevir-updates?label=s%C3%BCr%C3%BCm&color=2563eb" alt="Sürüm">
-  <img src="https://img.shields.io/badge/Windows-10%20%7C%2011-0078D6?logo=windows&logoColor=white" alt="Windows 10 / 11">
+  <strong>Translate anything on your screen with one keystroke.</strong><br>
+  Windows OCR reads the text where it already is, and ScreenGloss draws the translation over it.
+  Close the overlay and your screen is back exactly as it was.
 </p>
 
 <p align="center">
-  <a href="https://github.com/mustafatire/ekran-cevir-updates/releases/latest/download/EkranCevir.exe"><strong>⬇️ EkranCevir.exe'yi indir</strong></a>
+  <a href="README.md">English</a>
   &nbsp;•&nbsp;
-  <a href="https://github.com/mustafatire/ekran-cevir-updates/releases">Tüm sürümler</a>
+  <a href="README.tr.md">Türkçe</a>
 </p>
-
-![Ekran Çevir çeviri kartları](docs/onizleme.png)
-
-<p align="center"><sub>Örnek bir sayfa üzerinde uygulamanın gerçek çeviri kartları. Orijinal metin, kartların arkasında soluk görünür.</sub></p>
-
-## Nedir?
-
-**Ekran Çevir**, Windows'un yerleşik OCR motoruyla ekrandaki metni okur ve seçtiğiniz dile
-çevirir. Sonucu ayrı bir pencereye taşımak yerine, metnin tam üzerine yerleştirilen
-kartlarda gösterir. Böylece video, oyun, PDF veya web sayfasındaki yabancı metni ekrandan
-ayrılmadan takip edebilirsiniz.
-
-Kurulum gerektirmez: tek bir `.exe` dosyasıdır ve sistem tepsisinde sessizce çalışır.
-
-## Öne çıkanlar
-
-- **Tek tuşla tam ekran çeviri** — `Ctrl + Alt + T`
-- **Bölge seçerek çeviri** — `Ctrl + Alt + R`; fareyle istediğiniz alanı seçin
-- **Panodan çeviri** — `Ctrl + Alt + C`; kopyaladığınız metni ayrı pencerede çevirin
-- **16 hedef dil** — Türkçe varsayılan; İngilizce, Almanca, Rusça, Arapça, Japonca ve daha fazlası
-- **Yerinde çeviri kartları** — metinlerin üzerine yerleşir; `Space` ile orijinali görün, `Esc` ile kapatın
-- **Yazı boyutu kaydırıcısı** — sürüklerken ekran üzerinde canlı önizleme
-- **Sistem tepsisi** — arka planda sessiz çalışır, Windows ile başlatılabilir
-- **Otomatik güncelleme** — yeni sürüm çıkınca bildirim gelir; tek tıkla güncellenir
-- **Kısayolları duraklat** — oyun veya başka bir programla çakışırsa geçici olarak kapatın
-
-## Hızlı başlangıç
-
-1. **İndirin:** [EkranCevir.exe](https://github.com/mustafatire/ekran-cevir-updates/releases/latest/download/EkranCevir.exe) dosyasına tıklayın.
-2. **Çalıştırın:** İndirilen dosyaya çift tıklayın. Kurulum yoktur; uygulama sistem tepsisinde açılır.
-3. **Çevirin:** Çevirmek istediğiniz metni ekrana getirip `Ctrl + Alt + T` tuşlarına basın.
-4. **Kapatın:** `Esc` veya farenin sol tuşu.
-
-> Windows "Bilinmeyen yayıncı" uyarısı gösterirse **Ek bilgi > Yine de çalıştır** seçeneğini
-> kullanın. Dosya imzasızdır; yalnızca güvendiğiniz kaynaktan indirin.
-
-İlk açılışta kısa bir tanıtım kartı görünür. Tepsi menüsündeki **Kısayolları göster** ile
-bu kartı daha sonra yeniden açabilirsiniz.
-
-## Kısayollar
-
-| Kısayol | İşlev |
-|---|---|
-| `Ctrl + Alt + T` | Tüm ekranı çevir |
-| `Ctrl + Alt + R` | Fareyle seçilen bölgeyi çevir |
-| `Ctrl + Alt + C` | Panodaki metni çevir |
-| `Ctrl + Alt + Shift + Q` | Uygulamadan çık |
-
-> `Ctrl + Alt + T` ve `Ctrl + Alt + R`, Türkçe klavyede sırasıyla `₺` ve `®` üretmek için de
-> kullanılır. Bu tuşları sık kullanıyorsanız ya da başka bir program aynı kısayolu kullanıyorsa
-> Ayarlar'dan farklı bir birleşim seçin.
-
-### Sonuç ekranı
-
-Çeviri kartları göründüğünde:
-
-- `Space` veya `O` — orijinal ekran ile çeviri arasında geçiş yapın.
-- `Esc` veya farenin sol tuşu — çeviriyi kapatın.
-- `Ctrl + C` — tüm çevrilmiş metni panoya kopyalayın ve kapatın.
-
-Ekranın altındaki ipucu çubuğu kullanılabilecek tuşları hatırlatır.
-
-## Ayarlar
-
-Tepsi simgesine sağ tıklayıp **Ayarlar…** bölümünü açın.
-
-- **Kısayollar:** Kutudaki metni silip istediğiniz tuş birleşimini basın. Ctrl, Alt veya Win
-  ile birlikte bir tuş ya da tek başına **F1–F24** kullanılabilir. Tek başına harf atanamaz
-  (o harf tüm programlarda yazmayı engellerdi). Aynı birleşim iki işleve atanamaz.
-- **Hedef dil:** Varsayılan Türkçe. 16 dil arasından seçilebilir; tepsi menüsünden de hızlıca
-  değiştirilebilir.
-- **Yazı boyutu:** %80–%150 arası kaydırıcı. Sürüklerken çeviri kartlarının boyutu ekran
-  üzerinde canlı olarak önizlenir.
-- **Arka plan karartma:** Çeviri kartlarının okunurluğunu artırmak için ekranın ne kadar
-  karartılacağını belirler.
-- **OCR metin dili:** Normalde **Otomatik** bırakın. Seçeneğin yanındaki **?** simgesine
-  fareyle gelince ayrıntılı açıklama görünür.
-- **Ayarları sıfırla:** Kısayollar, hedef dil, yazı boyutu, karartma ve OCR dilini varsayılan
-  değerlere döndürür. Uygulamak için **Kaydet**'e basın.
 
 <p align="center">
-  <img src="docs/ayarlar.png" alt="Ekran Çevir ayarlar penceresi">
+  <img src="https://img.shields.io/github/v/release/mustafatire/screen-gloss-updates?label=version&color=2563eb" alt="Latest version">
+  <img src="https://img.shields.io/badge/Windows-10%20%7C%2011-0078D6?logo=windows&logoColor=white" alt="Windows 10 / 11">
+  <img src="https://img.shields.io/badge/interface-English%20%7C%20T%C3%BCrk%C3%A7e-0f766e" alt="English and Turkish interface">
 </p>
 
-Tepsi menüsünde ayrıca **Kısayolları duraklat**, **Windows ile başlat**, **Günlük dosyasını aç**,
-**Güncellemeler** ve **Hakkında** seçenekleri bulunur.
+<p align="center">
+  <a href="https://github.com/mustafatire/screen-gloss-updates/releases/latest/download/ScreenGloss.exe"><strong>⬇️ Download ScreenGloss.exe</strong></a>
+  &nbsp;•&nbsp;
+  <a href="https://github.com/mustafatire/screen-gloss-updates/releases">All releases</a>
+</p>
 
-## Desteklenen diller
+![ScreenGloss translation cards over a Spanish astronomy page](docs/preview-en.png)
 
-Çeviri hedefi olarak 16 dil: **Türkçe**, İngilizce, Almanca, Fransızca, İspanyolca, İtalyanca,
-Rusça, Arapça, Hollandaca, Portekizce, Lehçe, Ukraynaca, Azerice, Japonca, Korece,
-Çince (Basitleştirilmiş).
+<p align="center"><sub>A Spanish page translated into English by ScreenGloss. Translation cards sit exactly where the source text was; the original stays visible underneath.</sub></p>
 
-> Kaynak metin Latin alfabesi dışındaysa (Rusça, Arapça, Çince vb.) Windows Ayarları >
-> **Zaman ve dil** bölümünden ilgili dilin OCR paketini eklemeniz gerekir.
+## What it does
 
-## Gereksinimler
+**ScreenGloss** is a lightweight Windows screen translator. It captures the screen (or a region you
+select), reads the text with the OCR engine built into Windows, translates it into one of 16
+languages, and places the result directly over the original text.
 
-- **Windows 10 veya 11 (64 bit)**
-- **İnternet bağlantısı** (çeviri için)
-- Python veya ek kurulum gerekmez; tek EXE yeterlidir
+Because the translation stays in context, you can follow a video, a game, a PDF, a presentation, or
+a foreign-language website without switching windows. There is no installer: it is a single `.exe`
+that lives quietly in the system tray.
 
-## Gizlilik ve notlar
+## Highlights
 
-- Çevrilecek metinler Google'ın çeviri servisine gönderilir. Google yanıt vermezse MyMemory
-  servisi denenir. Gizli veya hassas metinlerde bunu göz önünde bulundurun.
-- Uygulama hesap açmanızı istemez, reklam göstermez. Ayarlar, önbellek ve günlük dosyaları
-  `%LOCALAPPDATA%\EkranCevir` klasöründe tutulur.
-- DRM korumalı video içerikleri (Netflix, Disney+ vb.) ve bazı tam ekran oyunlar siyah görüntü
-  verebilir; bu Windows'un ekran yakalama kısıtlamasıdır. Oyunu "pencereli / borderless" moda alın.
-- Çok küçük, bulanık veya düşük kontrastlı yazılar OCR tarafından okunamayabilir. Bölge
-  seçimiyle yakınlaştırmak çoğu zaman yardımcı olur.
-- Çeviriler makine çevirisidir; teknik terimlerde, deyimlerde ve kısaltmalarda hata olabilir.
+- **One-keystroke full-screen translation** — `Ctrl + Alt + T`
+- **Region translation** — `Ctrl + Alt + R`; drag a box around just the text you need
+- **Clipboard translation** — `Ctrl + Alt + C`; translate copied text in a separate window
+- **16 target languages** — English, Turkish, German, French, Spanish, Italian, Russian, Arabic,
+  Dutch, Portuguese, Polish, Ukrainian, Azerbaijani, Japanese, Korean, and Simplified Chinese
+- **Translations in place** — press `Space` to see the original, `Esc` or click to close
+- **Live text-size preview** — move the slider and see the card size immediately on screen
+- **English and Turkish interface** — follows the Windows display language, or choose manually
+- **System tray app** — starts with Windows if you want, and stays out of the way
+- **Automatic updates** — download and install a new version from inside the app
+- **Pause shortcuts** — temporarily disable every hotkey when one conflicts with a game or another app
 
-## Güncellemeler
+## Quick start
 
-- Uygulama açılışta ve günde birkaç kez yeni sürüm kontrolü yapar; güncelleme varsa bildirim
-  ve bir pencere gösterir.
-- **Şimdi güncelle** ile yeni EXE indirilir, SHA-256 özeti doğrulanır ve uygulama kendini
-  değiştirip yeniden başlatır. Ayarlarınız ve önbellek korunur.
-- Güncelleme kontrolünü tepsi menüsündeki **Güncellemeler > Şimdi kontrol et** ile hemen
-  yapabilir, otomatik kontrolü aynı menüden kapatabilirsiniz.
-- Güncelleme dosyaları bu depodaki [Releases](https://github.com/mustafatire/ekran-cevir-updates/releases)
-  bölümünden yayınlanır. **Eski sürümler silinmez**; her sürüm kendi etiketiyle arşivde kalır.
+1. **Download:** click [ScreenGloss.exe](https://github.com/mustafatire/screen-gloss-updates/releases/latest/download/ScreenGloss.exe).
+2. **Run it:** double-click the file. There is no setup; ScreenGloss opens in the system tray.
+3. **Translate:** bring the text you want onto the screen and press `Ctrl + Alt + T`.
+4. **Close:** press `Esc` or click with the left mouse button.
 
-## Bu depo hakkında
+> If Windows shows “Unknown publisher”, choose **More info > Run anyway**. The executable is not
+> code-signed. Only download it from this repository.
 
-Bu depo, Ekran Çevir'in otomatik güncelleme dosyalarını (`EkranCevir.exe`, `latest.json`) ve
-bu tanıtım sayfasını barındırır. Kaynak kod bu depoda yayınlanmaz.
+A short introduction card appears the first time. You can reopen it later from the tray menu with
+**Show shortcuts**.
 
-- Son sürümü indir: [EkranCevir.exe](https://github.com/mustafatire/ekran-cevir-updates/releases/latest/download/EkranCevir.exe)
-- Sürüm arşivi: [Releases](https://github.com/mustafatire/ekran-cevir-updates/releases)
+## Shortcuts
 
-## Geri bildirim
+| Shortcut | Action |
+|---|---|
+| `Ctrl + Alt + T` | Translate the whole screen |
+| `Ctrl + Alt + R` | Translate a region selected with the mouse |
+| `Ctrl + Alt + C` | Translate the clipboard text |
+| `Ctrl + Alt + Shift + Q` | Quit ScreenGloss |
 
-Hata bildirimi, öneri veya soru için [Issues](https://github.com/mustafatire/ekran-cevir-updates/issues)
-bölümünü kullanabilirsiniz.
+> On a Turkish keyboard, `Ctrl + Alt + T` and `Ctrl + Alt + R` are also used to type `₺` and `®`.
+> If you use those characters often, or another app already owns the shortcut, pick a different
+> combination in Settings.
+
+### On the result screen
+
+- `Space` or `O` — switch between the translated screen and the original.
+- `Esc` or left click — close the translation.
+- `Ctrl + C` — copy all translated text to the clipboard and close.
+
+The hint bar at the bottom of the screen reminds you which keys are available.
+
+## Settings
+
+Right-click the tray icon and choose **Settings…**.
+
+- **Shortcuts:** click a shortcut box and press the combination you want. Use a key with Ctrl, Alt,
+  or Win, or a single **F1–F24** key. A bare letter is not allowed because it would block typing in
+  every app. Two actions cannot share the same combination.
+- **Interface language:** **Automatic (Windows)**, English, or Turkish. The change applies to newly
+  opened windows.
+- **Target language:** 16 languages, also available quickly from the tray menu. New installations
+  default to the interface language; an existing target choice is preserved.
+- **Text size:** 80%–150%. The translation cards are previewed live on screen while you drag.
+- **Background dimming:** controls how much the original screen is darkened behind the cards.
+- **OCR text language:** leave it on **Automatic** normally. If you know the source language,
+  choosing it can improve accuracy. Hover the **?** icon for details.
+- **Check for updates**, **Reset settings**, and **Save** are at the bottom of the window.
+
+<p align="center">
+  <img src="docs/settings-en.png" alt="ScreenGloss settings window in English">
+</p>
+
+Settings, cache, and logs are stored in `%LOCALAPPDATA%\EkranCevir`. That folder name is kept for
+upgrade compatibility; your settings from earlier versions are preserved.
+
+## Supported languages
+
+ScreenGloss can translate **into** these 16 languages:
+
+**English**, Turkish, German, French, Spanish, Italian, Russian, Arabic, Dutch, Portuguese, Polish,
+Ukrainian, Azerbaijani, Japanese, Korean, and Chinese (Simplified).
+
+> If the source text uses a non-Latin script (Russian, Arabic, Chinese, Japanese, Korean, etc.), add
+> that language’s OCR pack in Windows **Settings > Time & language**. Without the OCR pack,
+> ScreenGloss cannot read the text.
+
+## Requirements
+
+- **Windows 10 or 11 (64-bit)**
+- **An internet connection** for translation
+- No Python, no installer, no account
+
+## Privacy and limitations
+
+- Text is sent to Google’s public translation endpoint. If Google does not respond, ScreenGloss tries
+  the MyMemory service. Keep this in mind for confidential or sensitive text.
+- ScreenGloss does not require an account and shows no ads. Settings, cache, and logs stay in
+  `%LOCALAPPDATA%\EkranCevir`.
+- DRM-protected video (Netflix, Disney+, etc.) and some exclusive full-screen games may produce a
+  black capture. This is a Windows screen-capture limitation; try borderless/windowed mode.
+- Very small, blurry, or low-contrast text may not be recognized. Selecting a region usually helps.
+- Translations are machine translations and can be wrong, especially for technical terms, idioms,
+  and abbreviations. Email addresses and URLs are deliberately left untranslated.
+- Right-to-left layouts (Arabic, Hebrew) may not always be positioned perfectly on screen.
+
+## Updates
+
+- ScreenGloss checks for a new version 20 seconds after launch and then a few times a day.
+- **Update now** downloads the new EXE, verifies its SHA-256 hash, replaces the running file, and
+  restarts the app. Settings and cache are preserved.
+- Check immediately from **tray > Updates > Check now**; automatic checks can be disabled there too.
+- Update files are published in this repository’s
+  [Releases](https://github.com/mustafatire/screen-gloss-updates/releases). **Old releases are never
+  deleted**; every version stays archived under its own tag.
+- The update source is HTTPS-only and the downloaded file must pass a SHA-256 and PE/MZ check.
+
+> **Updating from 1.4.0 or earlier:** your existing settings are kept. The app will identify itself
+> as ScreenGloss, but the EXE file may keep its old `EkranCevir.exe` name because it replaces itself
+> in place. New downloads use `ScreenGloss.exe`. The update repository was renamed to
+> `screen-gloss-updates`; GitHub redirects the old URL, so older versions continue to receive
+> updates.
+
+> **Updating from 1.1 or older:** automatic updates arrived in 1.2.0. Download `ScreenGloss.exe` from
+> this page once and run it manually.
+
+## About this repository
+
+This repository hosts ScreenGloss’s automatic update files (`ScreenGloss.exe` and `latest.json`) and
+this product page. Source code is not published here.
+
+- Latest download: [ScreenGloss.exe](https://github.com/mustafatire/screen-gloss-updates/releases/latest/download/ScreenGloss.exe)
+- Version archive: [Releases](https://github.com/mustafatire/screen-gloss-updates/releases)
+- Türkçe sayfa: [README.tr.md](README.tr.md)
+
+## Feedback
+
+Use [Issues](https://github.com/mustafatire/screen-gloss-updates/issues) for bug reports, feature
+requests, and questions.
 
 ---
 
-<p align="center"><sub>Ekran Çevir • Windows için ekran çevirmeni</sub></p>
+<p align="center"><sub>ScreenGloss • a screen translator for Windows</sub></p>
