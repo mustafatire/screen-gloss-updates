@@ -54,11 +54,32 @@ that lives quietly in the system tray.
   `Esc` or **Close** to exit
 - **Copy the translation or the original** — `Ctrl+C` / `Ctrl+Shift+C`, or the two buttons on the
   result screen
+- **Translation history** — the last 50 translations, searchable and copyable from the tray menu
 - **Live text-size preview** — move the slider and see the translated text size immediately on screen
 - **English and Turkish interface** — follows the Windows display language, or choose manually
 - **System tray app** — starts with Windows if you want, and stays out of the way
 - **Automatic updates** — download and install a new version from inside the app
 - **Pause shortcuts** — temporarily disable every hotkey when one conflicts with a game or another app
+
+### What's new in 1.7.0
+
+- **A redesigned result toolbar:** the copy and close controls now sit in a compact,
+  rounded dark pill with a blue **Translation** button, a quiet **Original** button,
+  a thin separator, and a small **✕**.
+- **Clearer feedback:** the old **Copy:** label is gone, copy icons identify the two
+  actions, buttons change color on hover, and Close turns red under the pointer.
+- **Narrow mode:** tight regions collapse the toolbar to **T / O / ✕** icons; the full
+  labels appear as tooltips.
+- **Translation history:** **tray > Translation history** lists your last 50
+  translations. Search them, copy the translation or the original, or clear the
+  history. It is stored only on your computer, in the app's data folder.
+- **Better OCR:** small regions are upscaled 2× before recognition and low-contrast
+  images are normalized, so small and faint text is read more reliably. Full-screen
+  captures are unaffected and do not get slower.
+- **Text size on the result screen:** `Ctrl + +` and `Ctrl + -` redraw the translation
+  at 80%–150% without changing your saved settings.
+- **Unchanged behavior:** outside-strip placement, copying, `Esc`, `Ctrl+C`,
+  `Ctrl+Shift+C`, `Space`/`O`, and click-does-not-close all work as before.
 
 ### What's new in 1.6.1
 
@@ -125,6 +146,7 @@ A short introduction card appears the first time. You can reopen it later from t
 - `Esc` or **Close** — close the translation. A mouse click no longer closes it.
 - `Ctrl + C` or **Copy: Translation** — copy all translated text to the clipboard.
 - `Ctrl + Shift + C` or **Copy: Original** — copy the original on-screen text to the clipboard.
+- `Ctrl + +` / `Ctrl + -` — make the translated text larger or smaller (80%–150%).
 - Copying keeps the result screen open and shows a short confirmation.
 
 The toolbar on the result screen reminds you which actions are available. If you press the translate
@@ -179,8 +201,9 @@ Ukrainian, Azerbaijani, Japanese, Korean, and Chinese (Simplified).
 
 - Text is sent to Google’s public translation endpoint. If Google does not respond, ScreenGloss tries
   the MyMemory service. Keep this in mind for confidential or sensitive text.
-- ScreenGloss does not require an account and shows no ads. Settings, cache, and logs stay in
-  `%LOCALAPPDATA%\EkranCevir`.
+- ScreenGloss does not require an account and shows no ads. Settings, cache, translation history,
+  and logs stay in `%LOCALAPPDATA%\EkranCevir`. You can clear the history from
+  **tray > Translation history**.
 - DRM-protected video (Netflix, Disney+, etc.) and some exclusive full-screen games may produce a
   black capture. This is a Windows screen-capture limitation; try borderless/windowed mode.
 - Very small, blurry, or low-contrast text may not be recognized. Selecting a region usually helps.
