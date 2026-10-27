@@ -56,10 +56,32 @@ bir `.exe` dosyasıdır.
   düğme
 - **Canlı yazı boyutu önizlemesi** — kaydırıcıyı sürüklerken çeviri metninin boyutu ekranda anında
   görünür
+- **Çeviri geçmişi** — son 50 çeviri tepsi menüsünden aranabilir ve kopyalanabilir
 - **Türkçe ve İngilizce arayüz** — Windows görüntüleme diline uyar; isterseniz elle seçin
 - **Sistem tepsisi** — arka planda çalışır, isterseniz Windows ile başlar
 - **Otomatik güncelleme** — yeni sürümü uygulamanın içinden indirip kurabilirsiniz
 - **Kısayolları duraklat** — oyun veya başka bir programla çakışırsa tüm kısayolları geçici kapatın
+
+### 1.7.0 yenilikleri
+
+- **Yenilenen sonuç araç çubuğu:** kopyalama ve kapatma kontrolleri artık kompakt,
+  yuvarlak hatlı koyu bir pill içinde. Mavi **Çeviri**, sade **Orijinal**, ince bir
+  ayırıcı ve küçük bir **✕** var.
+- **Daha net geri bildirim:** eski **Kopyala:** etiketi kaldırıldı; kopyalama
+  simgeleri iki işlemi ayırt ediyor, düğmeler üzerine gelince renk değiştiriyor ve
+  Kapat düğmesi fare altında kırmızıya dönüyor.
+- **Dar alan modu:** dar bölgelerde araç çubuğu **Ç / O / ✕** ikonlarına daralıyor;
+  tam etiketler tooltip olarak görünüyor.
+- **Çeviri geçmişi:** tepsi > **Çeviri geçmişi** son 50 çeviriyi listeler. Arama
+  yapabilir, çeviriyi veya orijinali kopyalayabilir, geçmişi temizleyebilirsiniz.
+  Kayıt yalnızca bu bilgisayarda, uygulamanın veri klasöründe tutulur.
+- **Daha iyi OCR:** küçük bölgeler tanımadan önce 2 kat büyütülür, düşük kontrastlı
+  görüntüler normalize edilir. Küçük ve soluk yazılar daha güvenilir okunur; tam
+  ekran çekimleri yavaşlamaz.
+- **Sonuç ekranında yazı boyutu:** `Ctrl + +` ve `Ctrl + -` çeviriyi %80-150
+  arasında yeniden çizer; kayıtlı ayarlarınız değişmez.
+- **Davranış aynı:** dış şerit yerleşimi, kopyalama, `Esc`, `Ctrl+C`,
+  `Ctrl+Shift+C`, `Space`/`O` ve fareyle tıklayınca kapanmama korunuyor.
 
 ### 1.6.1 yenilikleri
 
@@ -130,6 +152,7 @@ daha sonra yeniden açabilirsiniz.
 - `Esc` veya **Kapat** — çeviriyi kapatın. Fareyle tıklamak artık kapatmaz.
 - `Ctrl + C` veya **Kopyala: Çeviri** — tüm çevrilmiş metni panoya kopyalayın.
 - `Ctrl + Shift + C` veya **Kopyala: Orijinal** — ekrandaki orijinal metni panoya kopyalayın.
+- `Ctrl + +` / `Ctrl + -` — çevrilmiş metni büyütün veya küçültün (%80-150).
 - Kopyalama sonuç ekranını açık tutar ve kısa bir onay gösterir.
 
 Sonuç ekranındaki araç çubuğu kullanılabilecek işlemleri hatırlatır. Sonuç ekranı açıkken çeviri
@@ -184,8 +207,9 @@ Portekizce, Lehçe, Ukraynaca, Azerice, Japonca, Korece ve Basitleştirilmiş Ç
 
 - Metinler çeviri için Google'ın herkese açık çeviri uç noktasına gönderilir. Google yanıt vermezse
   MyMemory servisi denenir. Gizli veya hassas metinlerde bunu göz önünde bulundurun.
-- ScreenGloss hesap açmanızı istemez ve reklam göstermez. Ayar, önbellek ve günlük dosyaları
-  `%LOCALAPPDATA%\EkranCevir` klasöründe kalır.
+- ScreenGloss hesap açmanızı istemez ve reklam göstermez. Ayar, önbellek, çeviri geçmişi ve günlük
+  dosyaları `%LOCALAPPDATA%\EkranCevir` klasöründe kalır. Geçmişi tepsi > **Çeviri geçmişi**
+  bölümünden temizleyebilirsiniz.
 - DRM korumalı video içerikleri (Netflix, Disney+ vb.) ve bazı tam ekran oyunlar siyah görüntü
   verebilir. Bu Windows'un ekran yakalama kısıtlamasıdır; oyunu pencereli / borderless moda alın.
 - Çok küçük, bulanık veya düşük kontrastlı yazılar OCR tarafından okunamayabilir. Bölge seçimiyle
