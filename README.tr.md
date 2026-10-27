@@ -62,6 +62,17 @@ bir `.exe` dosyasıdır.
 - **Otomatik güncelleme** — yeni sürümü uygulamanın içinden indirip kurabilirsiniz
 - **Kısayolları duraklat** — oyun veya başka bir programla çakışırsa tüm kısayolları geçici kapatın
 
+### 1.7.1 yenilikleri
+
+- **Listeler şeklini koruyor:** madde işaretli ve numaralı satırlar tek uzun
+  paragrafa dönüşmeden kendi satırlarında çevrilip yerleştiriliyor. Girintili
+  devam satırları ve OCR'ın ayrı okuduğu madde işaretleri de doğru ele alınıyor.
+- **Fare tekerleğiyle yakınlaştırma:** `Ctrl + fare tekerleği` çeviriyi %80-150
+  arasında yeniden çizer ve sonuç açılırken kısa bir ipucu görünür. Klavyeden
+  `Ctrl + +` ve `Ctrl + -` de çalışır.
+- **Değişmeyenler:** araç çubuğu, kopyalama, geçmiş, OCR büyütme ve dış şerit
+  yerleşimi eskisi gibi.
+
 ### 1.7.0 yenilikleri
 
 - **Yenilenen sonuç araç çubuğu:** kopyalama ve kapatma kontrolleri artık kompakt,
@@ -152,7 +163,8 @@ daha sonra yeniden açabilirsiniz.
 - `Esc` veya **Kapat** — çeviriyi kapatın. Fareyle tıklamak artık kapatmaz.
 - `Ctrl + C` veya **Kopyala: Çeviri** — tüm çevrilmiş metni panoya kopyalayın.
 - `Ctrl + Shift + C` veya **Kopyala: Orijinal** — ekrandaki orijinal metni panoya kopyalayın.
-- `Ctrl + +` / `Ctrl + -` — çevrilmiş metni büyütün veya küçültün (%80-150).
+- `Ctrl + fare tekerleği` — çevrilmiş metni büyütün veya küçültün (%80-150).
+  Klavyeden `Ctrl + +` / `Ctrl + -` aynı işi yapar.
 - Kopyalama sonuç ekranını açık tutar ve kısa bir onay gösterir.
 
 Sonuç ekranındaki araç çubuğu kullanılabilecek işlemleri hatırlatır. Sonuç ekranı açıkken çeviri
