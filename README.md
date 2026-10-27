@@ -61,6 +61,17 @@ that lives quietly in the system tray.
 - **Automatic updates** — download and install a new version from inside the app
 - **Pause shortcuts** — temporarily disable every hotkey when one conflicts with a game or another app
 
+### What's new in 1.7.1
+
+- **Lists keep their shape:** bullets and numbered steps are translated and placed on
+  their own lines instead of being merged into one run-on paragraph. Indented
+  continuation lines and bullets that OCR reads separately are handled as well.
+- **Zoom with the mouse wheel:** `Ctrl + mouse wheel` redraws the translation at
+  80%–150%, and a short hint appears when the result opens. `Ctrl + +` and `Ctrl + -`
+  still work from the keyboard.
+- **Unchanged:** the toolbar, copying, history, OCR upscaling, and outside-strip
+  placement work as before.
+
 ### What's new in 1.7.0
 
 - **A redesigned result toolbar:** the copy and close controls now sit in a compact,
@@ -146,7 +157,8 @@ A short introduction card appears the first time. You can reopen it later from t
 - `Esc` or **Close** — close the translation. A mouse click no longer closes it.
 - `Ctrl + C` or **Copy: Translation** — copy all translated text to the clipboard.
 - `Ctrl + Shift + C` or **Copy: Original** — copy the original on-screen text to the clipboard.
-- `Ctrl + +` / `Ctrl + -` — make the translated text larger or smaller (80%–150%).
+- `Ctrl + mouse wheel` — make the translated text larger or smaller (80%–150%).
+  `Ctrl + +` / `Ctrl + -` do the same from the keyboard.
 - Copying keeps the result screen open and shows a short confirmation.
 
 The toolbar on the result screen reminds you which actions are available. If you press the translate
