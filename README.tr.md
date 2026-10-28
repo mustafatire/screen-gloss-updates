@@ -62,6 +62,28 @@ bir `.exe` dosyasıdır.
 - **Otomatik güncelleme** — yeni sürümü uygulamanın içinden indirip kurabilirsiniz
 - **Kısayolları duraklat** — oyun veya başka bir programla çakışırsa tüm kısayolları geçici kapatın
 
+### 1.7.2 yenilikleri
+
+- **Çeviri çok daha hızlı:** toplu istekler üç paralel bağlantıyla gidiyor,
+  yedek servis dört paralel bağlantı kullanıyor ve uygulama açılırken çeviri
+  bağlantıları ısıtılıyor. 150 blokluk ekran ölçümünde çeviri süresi 0,92 s'den
+  0,29 s'ye (%68 kısa), açılıştan sonraki ilk iş 4,7 s'den 0,5 s'ye indi.
+- **Çizim hızlandı:** kelime genişlikleri önbelleğe alınıyor, yazı boyutu alan
+  tahminiyle seçiliyor. Tam ekran çizimi 0,39 s'den 0,22 s'ye (%44 kısa),
+  yakınlaştırma yeniden çizimi 0,88 s'den 0,24 s'ye (yaklaşık 3,5 kat) indi.
+  İşin tamamı baştan sona yaklaşık %40 kısalıyor.
+- **Çeviri başlarken ekran donuyor:** kısayola bastığınız an kare dondurulur ve
+  küçük bir rozet ilerlemeyi gösterir. Sonuç aynı pencerede gelir; Esc işi iptal
+  eder.
+- **Taşma bitti:** çeviri kaynak metnin kutusundan geniş çizilmiyor. Uzun çeviri
+  satır kırıyor veya küçülüyor; komşu sütuna ya da ekranın dışına taşmıyor.
+  Yakınlaştırma sırasında kutu komşuya kadar genişleyebiliyor.
+- **Daha akıcı yakınlaştırma:** yüzde bilgisi anında güncelleniyor ve hızlı
+  tekerlek hareketi tek çizimde birleşiyor.
+- **Yeni sonuç araç çubuğu:** düğmeler artık **Çeviriyi kopyala** ve
+  **Orijinali kopyala**; ikisi de aynı renkte, mavi öne çıkarma yok. Kopyalama
+  simgesi yenilendi; dar bölgelerde **Ç / O** kompakt düğmeleri ve ipuçları var.
+
 ### 1.7.1 yenilikleri
 
 - **Listeler şeklini koruyor:** madde işaretli ve numaralı satırlar tek uzun
