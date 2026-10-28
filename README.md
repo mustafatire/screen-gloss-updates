@@ -61,6 +61,30 @@ that lives quietly in the system tray.
 - **Automatic updates** — download and install a new version from inside the app
 - **Pause shortcuts** — temporarily disable every hotkey when one conflicts with a game or another app
 
+### What's new in 1.7.2
+
+- **Much faster translation:** batches now go out over three parallel
+  connections, the fallback service uses four, and the app warms the
+  translation connections at startup. Measured on a 150-block screen:
+  translation time dropped from 0.92 s to 0.29 s (68% shorter), and the first
+  job after launch from 4.7 s to 0.5 s.
+- **Faster drawing:** word widths are cached and the font size is estimated
+  from area first, then probed upward. A full-screen redraw went from 0.39 s
+  to 0.22 s (44% shorter); zoom redraws from 0.88 s to 0.24 s (about 3.5x).
+  The whole job is roughly 40% shorter end to end.
+- **The screen freezes when translation starts:** the frame is frozen the
+  moment you press the shortcut, with a small badge showing progress. The
+  result appears in the same window, and Esc cancels the job.
+- **No more overflow:** the translation never grows wider than the source text
+  box. Long results wrap or shrink instead of running into a neighbouring
+  column or off the screen. Zooming can still widen the box up to the next
+  neighbour.
+- **Smoother zoom:** the percentage updates instantly and a fast wheel spin is
+  merged into a single redraw.
+- **New result toolbar:** the buttons now read **Copy translation** and
+  **Copy original**, both in the same colour with no blue highlight, a redrawn
+  copy icon, and compact **T / O** buttons with tooltips in narrow regions.
+
 ### What's new in 1.7.1
 
 - **Lists keep their shape:** bullets and numbered steps are translated and placed on
